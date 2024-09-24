@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//Archivo para la creacion de la pagina
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import React from 'react';   //Importamos React
+import ReactDOM from 'react-dom/client';   //Importamos ReactDOM
+import 'primereact/resources/themes/saga-blue/theme.css';   //Tema PrimeReact
+import 'primereact/resources/primereact.min.css';   //Estilos de PrimeReact
+import 'primeicons/primeicons.css';   //Iconos PrimeReact
+import './index.css';   //Estilos globales
+import App from './App';   //Importamos la pagina
+
+//Renderizamos la pagina
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

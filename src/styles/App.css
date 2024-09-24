@@ -1,0 +1,19 @@
+/* Estilos para la pagina */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .app main {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+/* Estilos para el pie de pagina */
+
+.footer-panel {
+    background-color: #d4d9e2;
+    padding: 20px;
+    text-align: center;  
+  }
+    
+.footer-icons i {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #0077ff;
+}
+  
+.footer-icons i:hover {
+  color: #0346aa;
+}  

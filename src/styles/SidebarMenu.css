@@ -1,0 +1,34 @@
+/* Estilos para el sidebar */
+
+.custom-sidebar {
+    width: 300px;
+  }
+  
+ul {
+  list-style: none;
+  padding: 0;
+}
+  
+li {
+  margin: 20px 0;
+}
+  
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #0077ff;
+}
+
+/* Estilo para el boton del menu hamburguesa */
+.menu-icon .pi {
+  color: white;   
+}
+
+.menu-icon {
+  border: none;   
+  background-color: transparent;   /* Permite que el fondo sea transparente */
+}

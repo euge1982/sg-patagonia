@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+//Archivo para la creacion de la pagina principal
 
-function App() {
+import React from 'react';   //Importamos React
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';   //Importamos React Router
+import Home from './pages/Home.js';   // Importamos la pagina Home
+import Nature from './pages/Nature.js';   //Importamos la pagina Nature
+import Culture from './pages/Culture.js';   //Importamos la pagina Culture
+import Activities from './pages/Activities.js';   //Importamos la pagina Activities
+import Header from './components/Header.js';   //Importamos el encabezado
+import Footer from './components/Footer.js';   //Importamos el pie de pagina
+import './styles/App.css';   //Importamos los estilos de App
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Header/>
+        <main>
+          {/* Rutas */}
+          <Routes>   
+            <Route path="/" element={<Home />} />
+            <Route path="/nature" element={<Nature />} />
+            <Route path="/culture" element={<Culture />} />
+            <Route path="/activities" element={<Activities />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
-export default App;
+export default App;   //Exportamos la pagina
